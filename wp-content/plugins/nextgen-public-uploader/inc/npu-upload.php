@@ -161,6 +161,21 @@ if ( ! class_exists( 'npuGalleryUpload' ) ) {
 
 				$name = is_numeric( $i ) ? 'imagedescription_' . $i : 'imagedescription';
 
+				$strOutput .= "<div class='col-sm-5'>
+                <div class='form-group'>
+                  <input name='nggcf_fields[1]' class='form-control' id='name' placeholder='Name' style='margin-top: 10px;' type='text'>
+                </div>
+                <div class='form-group'>
+                  <input name='nggcf_fields[2]' class='form-control' id='email' placeholder='E-mail' type='email'>
+                </div>
+                <div class='form-group'>
+                  <input name='nggcf_fields[3]' class='form-control' id='name' placeholder='Nomor HP' type='text'>
+                </div>
+                <div class='form-group'>
+                  <textarea name='nggcf_fields[4]' class='form-control' placeholder='Alamat' rows='7'></textarea>
+                </div>
+              </div>";
+
 				$strOutput .= "<div class='col-sm-10 col-sm-offset-1'>
             					<div class='form-group'>
               						<label for='name'>
@@ -280,6 +295,15 @@ if ( ! class_exists( 'npuGalleryUpload' ) ) {
 					}
 				}
 			}
+			if (is_array($_POST['nggcf_fields'])){
+				$pid = $this->arrImageIds;
+				$fids = $_POST['nggcf_fields'];
+				foreach ($fids as $fid => $value) {
+					$wpdb->query("INSERT INTO ".$wpdb->prefix."nggcf_field_values (id, pid, fid, field_value, dateadded, ngg_type) VALUES (null, '$pid[0]', '$fid', '$value', '".date("Y-m-d H:i:s", time())."', '".NGGCF_IMAGES."')");	
+				}
+			}
+			// d($this);
+			// d($_POST);
 
 			do_action( 'npu_gallery_upload_update_details', $this );
 		}
