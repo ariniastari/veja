@@ -69,9 +69,11 @@ if ( ! class_exists( 'npuGalleryUpload' ) ) {
 
 			$disabled   = $disable ? " disabled='disabled'" : '';
 
-			$strOutput .= "\n\t<div class=\"uploader\">";
-			$strOutput .= "\n\t<input type=\"file\" name=\"imagefiles\" id=\"imagefiles\"{$disabled} />";
-			$strOutput .= "\n</div>";
+			// $strOutput .= "\n\t<div class=\"uploader\">";
+			$strOutput .= "<img id='target' src='".get_stylesheet_directory_uri()."/assets/images/upload.png'>";
+            $strOutput .= "\n<span class='btn btn-pink btn-sm btn-file'>Click here to choose your file";
+			$strOutput .= "\n\t<input type=\"file\" name=\"imagefiles\" id=\"imagefiles inp\"{$disabled} />";
+			$strOutput .= "\n</span>";
 			$strOutput .= "\n<input type=\"hidden\" name=\"{$name}\" value=\"{$gal_id}\">";
 
 			return $strOutput;
@@ -112,7 +114,9 @@ if ( ! class_exists( 'npuGalleryUpload' ) ) {
 					$strOutput .= '<div id="uploadimage">';
 					$strOutput .= "\n\t<form name=\"uploadimage\" id=\"uploadimage_form\" method=\"POST\" enctype=\"multipart/form-data\" accept-charset=\"utf-8\" >";
 
+					$strOutput .= "<div class='col-sm-5 col-sm-offset-1 text-center'>";
 					$strOutput .= $this->display_image_upload_input( $gal_id );
+					$strOutput .= "</div>";
 
 					if ( !$strDetailsPage ) {
 						$strOutput .= "\n\t<div class=\"image_details_textfield\">";
@@ -124,12 +128,12 @@ if ( ! class_exists( 'npuGalleryUpload' ) ) {
 
 					$strOutput .= apply_filters( 'npu_gallery_upload_display_uploader_before_submit', '', $this, 'shortcode' );
 
-			   	 	$strOutput .= "\n\t<div class=\"submit\"><br />";
+			   	 	$strOutput .= "<div class='col-sm-12 text-center'>";
 					if ( get_option( 'npu_upload_button' ) ) {
-						$strOutput .= "\n\t\t<input class=\"button-primary\" type=\"submit\" name=\"uploadimage\" id=\"uploadimage_btn\" ";
+						$strOutput .= "\n\t\t<input class=\"button-primary btn btn-danger\" type=\"submit\" name=\"uploadimage\" id=\"uploadimage_btn\" ";
 						$strOutput .= 'value="' . get_option( 'npu_upload_button' ) . '">';
 					} else {
-						$strOutput .= "\n\t\t<input class=\"button-primary\" type=\"submit\" name=\"uploadimage\" id=\"uploadimage_btn\" value=\"Upload\" />";
+						$strOutput .= "\n\t\t<input class=\"button-primary btn btn-danger\" type=\"submit\" name=\"uploadimage\" id=\"uploadimage_btn\" value=\"Upload\" />";
 					}
 					$strOutput .= "\n\t\t</div>";
 					$strOutput .= "\n</form>";
@@ -153,11 +157,18 @@ if ( ! class_exists( 'npuGalleryUpload' ) ) {
 			$strOutput = '';
 
 			if ( 'Enabled' == get_option( 'npu_image_description_select' ) ) {
-				$strOutput .= '<br />' . get_option( 'npu_description_text',  __( 'Description:', 'nextgen-public-uploader' ) ) . '<br />';
+				// $strOutput .= '<br />' . get_option( 'npu_description_text',  __( 'Description:', 'nextgen-public-uploader' ) ) . '<br />';
 
 				$name = is_numeric( $i ) ? 'imagedescription_' . $i : 'imagedescription';
 
-				$strOutput .= "\n\t<input type=\"text\" name=\"" . esc_attr( $name ) . "\" id=\"" . esc_attr( $name ) . "\"/>";
+				$strOutput .= "<div class='col-sm-10 col-sm-offset-1'>
+            					<div class='form-group'>
+              						<label for='name'>
+                						<h3>Tulis Caption Anda</h3>
+              						</label>";
+				$strOutput .= "\n\t<textarea name=\"" . esc_attr( $name ) . "\" id=\"" . esc_attr( $name ) . "\" class='form-control' rows='3'></textarea>";
+				$strOutput .= "</div>
+          					</div>";
 			}
 
 			return $strOutput;
