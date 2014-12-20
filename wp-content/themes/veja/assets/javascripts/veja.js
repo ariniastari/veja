@@ -27,4 +27,11 @@ jQuery( window ).load(function() {
     jQuery("#imgInp").change(function(){
         readURL(this);
     });
+
+    jQuery('.image-toggler').click(function(){
+        jQuery('.image-toggle').hide();
+        jQuery('.image-toggler').removeClass('active');
+        jQuery(this).addClass('active');
+        jQuery(jQuery(this).attr('data-image-id')).show();
+    });
 });
