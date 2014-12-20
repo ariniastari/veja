@@ -41,20 +41,7 @@
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
-          <ul class='nav navbar-nav'>
-            <li class='active'>
-              <a href='#'>Hadiah</a>
-            </li>
-            <li>
-              <a href='#'>Leaderboard</a>
-            </li>
-            <li>
-              <a href='#'>Gallery Supermama</a>
-            </li>
-            <li>
-              <a href='#'>Veja</a>
-            </li>
-          </ul>
+          <?php wp_nav_menu( array('menu' => 'Top Menu', 'menu_class' => 'nav navbar-nav' )); ?>
           <ul class='nav navbar-nav navbar-right hidden-xs hidden-sm'>
             <li>
               <a href='#'>
