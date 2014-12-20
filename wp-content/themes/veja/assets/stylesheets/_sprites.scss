@@ -1,0 +1,73 @@
+.sprites {
+	background: url("assets/images/sprites.png");
+	&.brand {
+		background-position: -8px -5px;
+		width: 223px;
+		height: 52px;
+	}
+	&.veja {
+		background-position: -11px -63px;
+		width: 59px;
+		height: 68px;
+	}
+	&.alfamart {
+		background-position: -90px -67px;
+		width: 135px;
+		height: 70px;
+	}
+	&.produk-1 {
+		background-position: -5px -154px;
+		width: 225px;
+		height: 271px ;
+		position: absolute;
+		margin-top: 85%;
+		margin-left: 15%;
+		z-index: 3;
+		&.remove {
+			z-index: 1;
+		}
+	}
+	&.produk-2 {
+		background-position: -248px -17px;
+		height: 233px;
+		width: 142px;
+		position: absolute;
+		z-index: 1;
+		margin-left: -28%;
+		margin-top: 90%;
+	}
+	&.twitter {
+		background-position: -248px -265px;
+		width: 34px;
+		height: 34px;
+	}
+	&.facebook {
+		background-position: -301px -265px;
+		width: 34px;
+		height: 34px;
+	}
+	&.upload {
+		background-position: -11px -424px;
+		width: 184px;
+		height: 204px;
+		margin: 0 auto;
+	}
+	&.caption {
+		background-position: -204px -424px;
+		width: 184px;
+		height: 204px;
+		margin: 0 auto;
+	}
+}
+
+@media(min-width: 1200px) {
+	.sprites {
+		&.produk-1 {
+			margin-top: 115%;
+		}
+		&.produk-2 {
+			margin-left: -22%;
+			margin-top: 115%;
+		}
+	}
+}
