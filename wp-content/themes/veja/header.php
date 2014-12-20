@@ -35,7 +35,7 @@
             <span class='icon-bar'></span>
             <span class='icon-bar'></span>
           </button>
-          <a href='#'>
+          <a href='<?php echo home_url(); ?>'>
             <div class='sprites brand'></div>
           </a>
         </div>
