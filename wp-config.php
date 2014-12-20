@@ -16,16 +16,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'sql561885');
+define('DB_NAME', 'veja_db');
 
 /** MySQL database username */
-define('DB_USER', 'sql561885');
+define('DB_USER', 'veja_usr');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'zP7!yW2!');
+define('DB_PASSWORD', 'v3j41234');
 
 /** MySQL hostname */
-define('DB_HOST', 'sql5.freemysqlhosting.net');
+define('DB_HOST', 'veja-db.catvcthb6snw.ap-southeast-1.rds.amazonaws.com');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
