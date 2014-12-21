@@ -72,7 +72,7 @@ if ( ! class_exists( 'npuGalleryUpload' ) ) {
 			// $strOutput .= "\n\t<div class=\"uploader\">";
 			$strOutput .= "<img id='target' src='".get_stylesheet_directory_uri()."/assets/images/upload.png'>";
             $strOutput .= "\n<span class='btn btn-pink btn-sm btn-file'>Click here to choose your file";
-			$strOutput .= "\n\t<input type=\"file\" name=\"imagefiles\" id=\"imagefiles inp\"{$disabled} />";
+			$strOutput .= "\n\t<input type=\"file\" name=\"imagefiles\" id=\"imagefiles\"{$disabled} />";
 			$strOutput .= "\n</span>";
 			$strOutput .= "\n<input type=\"hidden\" name=\"{$name}\" value=\"{$gal_id}\">";
 

@@ -24,7 +24,8 @@ jQuery( window ).load(function() {
         }
     }
 
-    jQuery("#imgInp").change(function(){
+    jQuery("#imagefiles").change(function(){
+        console.log("baca");
         readURL(this);
     });
 
