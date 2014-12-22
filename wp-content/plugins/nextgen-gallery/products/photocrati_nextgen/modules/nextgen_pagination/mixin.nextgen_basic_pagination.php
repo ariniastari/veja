@@ -68,14 +68,14 @@ class Mixin_NextGen_Basic_Pagination extends Mixin
                 for ($page_num = 1; $page_num <= $total_pages; $page_num++) {
                     if ($page == $page_num)
                     {
-                        $r .=  '<span class="current">' . $page_num . '</span>';
+                        $r .=  '<li class="active"><a href="#">' . $page_num . '</a></li>';
                     }
                     else {
                         if ($page_num < 3 || ($page_num >= $page - 3 && $page_num <= $page + 3) || $page_num > $total_pages - 3)
                         {
                             $newpage = (1 == $page_num ) ? 1 : $page_num;
 							$link = $this->object->set_param_for($current_url, 'nggpage', $newpage);
-                            $r .= '<a class="page-numbers" data-pageid="' . $newpage . '" href="' . $link . '">' . ($page_num) . '</a>';
+                            $r .= '<li><a class="page-numbers" data-pageid="' . $newpage . '" href="' . $link . '">' . ($page_num) . '</li></a>';
                         }
                     }
                 }
@@ -85,10 +85,10 @@ class Mixin_NextGen_Basic_Pagination extends Mixin
             {
                 $newpage = $page + 1;
 				$return['next'] = $this->object->set_param_for($current_url, 'nggpage', $newpage);
-                $r .=  '<a class="next" data-pageid="' . $newpage . '" id="ngg-next-' . $newpage . '" href="' . $return['next'] . '">' . $next_symbol . '</a>';
+                // $r .=  '<a class="next" data-pageid="' . $newpage . '" id="ngg-next-' . $newpage . '" href="' . $return['next'] . '">' . $next_symbol . '</a>';
             }
 
-            $return['output'] = "<div class='ngg-navigation'>{$r}</div>";
+            $return['output'] = "<ul class='pagination'><li class='first'><a href='#'>Page</a></li>{$r}</ul>";
         }
         else {
             $return['output'] = "<div class='ngg-clear'></div>";

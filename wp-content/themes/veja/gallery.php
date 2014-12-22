@@ -110,7 +110,7 @@ Template Name: Gallery Template
               </div>
             </div>
           </div> -->
-          <div class='row'>
+          <!-- <div class='row'>
             <div class='col-sm-6'>
               <nav>
                 <ul class='pagination'>
@@ -144,7 +144,7 @@ Template Name: Gallery Template
             <div class='col-sm-6 text-right'>
               <a class='btn btn-danger' href='#'>Join the Campaign</a>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

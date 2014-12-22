@@ -14,15 +14,15 @@ Follow variables are useable :
 ?>
 <?php if (!defined ('ABSPATH')) die ('No direct access allowed'); ?><?php if (!empty ($gallery)) : ?>
 
-<div class="ngg-galleryoverview ngg-template-caption row gallery" id="<?php echo $gallery->anchor ?>">
+<!-- <div class="ngg-galleryoverview ngg-template-caption row gallery" id="<?php echo $gallery->anchor ?>"> -->
 
 <?php if ($gallery->show_slideshow) { ?>
 	<!-- Slideshow link -->
-	<div class="slideshowlink">
+<!-- 	<div class="slideshowlink">
 		<a class="slideshowlink" href="<?php echo nextgen_esc_url($gallery->slideshow_link) ?>">
 			<?php echo $gallery->slideshow_link_text ?>
 		</a>
-	</div>
+	</div> -->
 <?php } ?>
 
 <?php if ($gallery->show_piclens) { ?>
@@ -35,10 +35,10 @@ Follow variables are useable :
 <?php } ?>
 	
 	<!-- Thumbnails -->
-    <?php $i = 0; ?>
+    <?php $i = 0;?>
 	<?php foreach ( $images as $image ) : ?>
 	
-	<div id="ngg-image-<?php echo $image->pid ?>" class="col-sm-3" <?php echo $image->style ?> >
+	<div id="ngg-image-<?php echo $image->pid ?>" class="col-sm-3" >
 		<div class="gallery-image" >
 			<div class='tile'>
 				<a href="<?php echo nextgen_esc_url($image->imageURL) ?>"
@@ -63,9 +63,17 @@ Follow variables are useable :
 	<?php } ?>
  	<?php endforeach; ?>
  	
-	<!-- Pagination -->
- 	<?php echo $pagination ?>
- 	
+</div>
+<!-- Pagination -->
+<div class='row'>
+	<div class='col-sm-6'>
+  		<nav>
+			<?php echo $pagination ?>
+		</nav>
+	</div>
+	<div class='col-sm-6 text-right'>
+      <a class='btn btn-danger' href='#'>Join the Campaign</a>
+    </div>
 </div>
 
 <?php endif; ?>
