@@ -9,13 +9,13 @@ Template Name: Gallery Template
     <div class='container-fluid content'>
       <div class='row'>
         <div class='col-md-8 col-md-offset-2 white'>
-          <div class='row'>
-            <div class='col-sm-5 text-right'>
+          <div class='row title' style="margin-bottom: 0;">
+            <div class='col-sm-5'>
               <h1>Gallery</h1>
             </div>
             <div class='col-sm-6'>
-              <h4 class='text-center'>Testimonial Campaign</h4>
-              <h5 class='text-left'>"Apa Jadinya Indonesia Tanpa Asisten Rumah Tangga?"</h5>
+              <h4>Testimonial Campaign</h4>
+              <h5>"Apa Jadinya Indonesia Tanpa Asisten Rumah Tangga?"</h5>
             </div>
           </div>
           <?php

@@ -5546,6 +5546,9 @@ h5 {
 .navbar-default .navbar-nav > li.active, .navbar-default .navbar-nav > li:hover {
   border-bottom: 2px solid #ff3b5e; }
 
+.navbar-nav.navbar-right > li.active, .navbar-nav.navbar-right > li:hover {
+  border-bottom: 0; }
+
 .navbar-default .navbar-nav > li > a {
   font-weight: bold;
   font-size: 14px;
@@ -5593,6 +5596,12 @@ h5 {
 .gallery .col-sm-3 {
   margin-top: 20px; }
 
+.gallery .modal-body {
+  padding: 20px;
+}
+.gallery .modal-content p{
+  padding: 0 15px;
+}
 .gallery-image {
   border: dashed 1px #cecece;
   padding: 5px; }
@@ -5602,9 +5611,18 @@ h5 {
       cursor: pointer; }
     .gallery-image .tile .caption {
       background: url("assets/images/bg-caption.png");
-      background-size: 100% 100%;
-      position: absolute;
-      bottom: 1px; }
+      position: relative;
+      margin-top: -10px;
+      padding-top: 10px; }
+    .gallery-image .tile .submitter {
+      background: url("assets/images/bg-caption.png");
+      position: relative;
+      margin-top: -10px;
+      padding-top: 10px;
+    }
+    .gallery-image .tile .submitter .red {
+      color: #ee696b;
+    }
 
 .pagination {
   margin-top: 40px; }

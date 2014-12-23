@@ -30,7 +30,7 @@
             <img src='<?php echo get_stylesheet_directory_uri(); ?>/assets/images/pop-up.jpg'>
             <p>Sed accumsan vulputate libero in convallis. Nunc eget dui lacus. Quisque lobortis mi ac erat pulvinar commodo. Ut dapibus in odio vitae consectetur.</p>
             <div class='text-center'>
-              <a class='btn btn-danger' href='#'>How To</a>
+              <a class='btn btn-danger' href='<?php echo esc_url( get_permalink( get_page_by_title( 'How To' ) ) ); ?>'>How To</a>
             </div>
           </div>
         </div>

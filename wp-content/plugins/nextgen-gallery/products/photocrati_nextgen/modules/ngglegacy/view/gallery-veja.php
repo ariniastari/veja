@@ -37,25 +37,36 @@ Follow variables are useable :
 	<!-- Thumbnails -->
     <?php $i = 0;?>
 	<?php foreach ( $images as $image ) : ?>
-	
+
 	<div id="ngg-image-<?php echo $image->pid ?>" class="col-sm-3" >
-		<div class="gallery-image" >
+		<div class="gallery-image" data-toggle="modal" data-target="#image-<?php echo $image->pid ?>" >
 			<div class='tile'>
-				<a href="<?php echo nextgen_esc_url($image->imageURL) ?>"
-	               title="<?php echo esc_attr($image->description) ?>"
-	               data-src="<?php echo nextgen_esc_url($image->imageURL) ?>"
-	               data-thumbnail="<?php echo nextgen_esc_url($image->thumbnailURL); ?>"
-	               data-image-id="<?php echo esc_attr($image->pid); ?>"
-	               data-title="<?php echo esc_attr($image->alttext); ?>"
-	               data-description="<?php echo esc_attr($image->description); ?>"
-	               <?php echo $image->thumbcode ?> >
-					<?php if ( !$image->hidden ) { ?>
-					<img class="user" title="<?php echo esc_attr($image->alttext) ?>" alt="<?php echo esc_attr($image->alttext) ?>" src="<?php echo nextgen_esc_url($image->thumbnailURL) ?>" <?php //echo $image->size ?> />
-					<?php } ?>
-				</a>
+				<?php if ( !$image->hidden ) { ?>
+				<img class="user" title="<?php echo esc_attr($image->alttext) ?>" alt="<?php echo esc_attr($image->alttext) ?>" src="<?php echo nextgen_esc_url($image->thumbnailURL) ?>" <?php //echo $image->size ?> />
+				<?php } ?>
 				<div class='caption'><?php if (!$image->hidden) { echo $image->caption; } ?></div>
 			</div>
 		</div>
+	</div>
+	<div class="modal fade gallery" id="image-<?php echo $image->pid ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+		     <div class="modal-body">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		      	<div class="text-center">
+			      	<h4>Testimonial Campaign</h4>
+			      	<h5>"Apa Jadinya Indonesia Tanpa Asisten Rumah Tangga?"</h5>
+			    </div>
+		      	<div class="gallery-image">
+			       	<div class='tile'>
+						<img class="user" title="<?php echo esc_attr($image->alttext) ?>" alt="<?php echo esc_attr($image->alttext) ?>" src="<?php echo nextgen_esc_url($image->imageURL) ?>"/>
+						<div class='submitter'>Submitter by <span class="red"><?php echo nggcf_get_field($image->pid, "Nama"); ?></span></div>
+					</div>
+				</div>
+		     </div>
+			<p><?php echo $image->caption; ?></p>
+	    </div>
+	  </div>
 	</div>
 	<?php if ( $image->hidden ) continue; ?>
 	<?php if ( $gallery->columns > 0 && ++$i % $gallery->columns == 0 ) { ?>
@@ -72,7 +83,7 @@ Follow variables are useable :
 		</nav>
 	</div>
 	<div class='col-sm-6 text-right'>
-      <a class='btn btn-danger' href='#'>Join the Campaign</a>
+      <a class='btn btn-danger' href='<?php echo esc_url( get_permalink( get_page_by_title( 'Upload Page' ) ) ); ?>'>Join the Campaign</a>
     </div>
 </div>
 
