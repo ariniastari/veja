@@ -83,14 +83,14 @@ if ( ! class_exists( 'npuGalleryUpload' ) ) {
 		public function display_uploader( $gal_id, $strDetailsPage = false, $blnShowAltText = true, $echo = true ) {
 			$strOutput = '';
 			if ( count( $this->arrErrorMsg ) > 0 ) {
-				$strOutput .= '<div class="upload_error">';
+				$strOutput .= '<div class="alert alert-danger">';
 				foreach ( $this->arrErrorMsg as $msg ) {
 					$strOutput .= $msg;
 				}
 				$strOutput .= '</div>';
 			}
 			if ( count( $this->arrImageMsg ) > 0 ) {
-				$strOutput .= '<div class="upload_error">';
+				$strOutput .= '<div class="alert alert-success">';
 				foreach ( $this->arrImageMsg as $msg ) {
 					$strOutput .= $msg;
 				}
@@ -163,16 +163,16 @@ if ( ! class_exists( 'npuGalleryUpload' ) ) {
 
 				$strOutput .= "<div class='col-sm-5'>
                 <div class='form-group'>
-                  <input name='nggcf_fields[1]' class='form-control' id='name' placeholder='Name' style='margin-top: 10px;' type='text'>
+                  <input name='nggcf_fields[1]' class='form-control' id='name' placeholder='Name' style='margin-top: 10px;' type='text' required>
                 </div>
                 <div class='form-group'>
-                  <input name='nggcf_fields[2]' class='form-control' id='email' placeholder='E-mail' type='email'>
+                  <input name='nggcf_fields[2]' class='form-control' id='email' placeholder='E-mail' type='email' required>
                 </div>
                 <div class='form-group'>
-                  <input name='nggcf_fields[3]' class='form-control' id='name' placeholder='Nomor HP' type='text'>
+                  <input name='nggcf_fields[3]' class='form-control' id='name' placeholder='Nomor HP' type='text' required>
                 </div>
                 <div class='form-group'>
-                  <textarea name='nggcf_fields[4]' class='form-control' placeholder='Alamat' rows='7'></textarea>
+                  <textarea name='nggcf_fields[4]' class='form-control' placeholder='Alamat' rows='7' required></textarea>
                 </div>
               </div>";
 
@@ -181,7 +181,7 @@ if ( ! class_exists( 'npuGalleryUpload' ) ) {
               						<label for='name'>
                 						<h3>Tulis Caption Anda</h3>
               						</label>";
-				$strOutput .= "\n\t<textarea name=\"" . esc_attr( $name ) . "\" id=\"" . esc_attr( $name ) . "\" class='form-control' rows='3'></textarea>";
+				$strOutput .= "\n\t<textarea name=\"" . esc_attr( $name ) . "\" id=\"" . esc_attr( $name ) . "\" class='form-control' rows='3' required></textarea>";
 				$strOutput .= "</div>
           					</div>";
 			}
