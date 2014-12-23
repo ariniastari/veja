@@ -58,7 +58,7 @@ class Mixin_NextGen_Basic_Pagination extends Mixin
             {
                 $newpage = (1 == $page - 1) ? 1 : $page - 1;
 				$return['prev'] = $this->object->set_param_for($current_url, 'nggpage', $newpage);
-                $r .=  '<a class="prev" data-pageid="' . $newpage . '" id="ngg-prev-' . $newpage . '" href="' . $return['prev'] . '">' . $prev_symbol . '</a>';
+                // $r .=  '<a class="prev" data-pageid="' . $newpage . '" id="ngg-prev-' . $newpage . '" href="' . $return['prev'] . '">' . $prev_symbol . '</a>';
             }
 
             $total_pages = ceil($total / $maxElement);
