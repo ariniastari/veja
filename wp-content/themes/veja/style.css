@@ -5441,7 +5441,14 @@ button.close {
     background-position: -7px -153px;
     width: 198px;
     height: 58px;
-    margin-top: 15px; }
+    margin: 0px auto;
+  }
+  @media (min-width: 768px) {
+    .sprites.tagline {
+      margin: 0;
+      margin-top: 15px; 
+    }
+  }
   .sprites.twitter {
     background-position: -248px -265px;
     width: 34px;
@@ -5674,6 +5681,23 @@ ul.gerai {
 
 .produk h2 {
   margin-bottom: 20px; }
+.produk img {
+  width: auto;
+}
+.produk-center {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .produk img {
+    width: 100%;
+  }
+  .produk-center {
+    text-align: left;
+  }
+}
+.produk ul.inline {
+  display: inline-block;
+}
 .produk .label-produk {
   background: #fff;
   padding: 5px 10px;
@@ -5681,8 +5705,13 @@ ul.gerai {
   font-size: 19px;
   position: absolute;
   bottom: 18%;
-  right: 0;
+  right: 25%;
   border-radius: 5px; }
+  @media (min-width: 768px) {
+    .produk .label-produk {
+      right: 0;
+    }
+  }
   .produk .label-produk .bold {
     font-weight: bold; }
 

@@ -8,7 +8,7 @@ Template Name: Produk Template
     <div class='container-fluid content'>
       <div class='row produk'>
         <div class='col-md-8 col-md-offset-2'>
-          <div class='row'>
+          <div class='row produk-center'>
             <div class='col-sm-4 col-sm-offset-1'>
               <div class='image-toggle' id='bottle'>
                 <img src='<?php the_field( "botol_gambar_produk" ); ?>'>
