@@ -83,7 +83,7 @@ Follow variables are useable :
 		</nav>
 	</div>
 	<div class='col-sm-6 text-right'>
-      <a class='btn btn-danger' href='<?php echo esc_url( get_permalink( get_page_by_title( 'Upload Page' ) ) ); ?>'>Join the Campaign</a>
+      <a class='btn btn-danger' href='<?php echo esc_url( get_permalink( get_page_by_title( 'Upload Page' ) ) ); ?>'>AYO BERPARTISIPASI</a>
     </div>
 </div>
 
