@@ -12,7 +12,7 @@ Template Name: Upload Page Template
           <h1>Upload</h1>
         </div>
         <div class='col-sm-6'>
-          <h4>Testimonial Campaign</h4>
+          <h4>Testimoni Campaign</h4>
           <h5>"Apa Jadinya Indonesia Tanpa Asisten Rumah Tangga?"</h5>
         </div>
       </div>

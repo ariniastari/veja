@@ -179,7 +179,7 @@ if ( ! class_exists( 'npuGalleryUpload' ) ) {
 				$strOutput .= "<div class='col-sm-10 col-sm-offset-1'>
             					<div class='form-group'>
               						<label for='name'>
-                						<h3>Tulis Caption Anda</h3>
+                						<h3>Bagikan Testimoni Anda</h3>
               						</label>";
 				$strOutput .= "\n\t<textarea name=\"" . esc_attr( $name ) . "\" id=\"" . esc_attr( $name ) . "\" class='form-control' rows='3' required></textarea>";
 				$strOutput .= "</div>
