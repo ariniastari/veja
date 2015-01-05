@@ -32,7 +32,7 @@ Template Name: Front Page Template
               <br>
               Campaign
             </a>
-            <p>Masukkan kode unik hasil pembelian Veja dan kumpulkan poin sebanyak-banyaknya untuk memenangkan hadiah mingguan menarik!</p>
+            <p>Ekspresikan kreatifitas Supermama Anda bersama Veja dan raih kesempatan memenangkan hadiah menarik dari Veja.</p>
           </div>
           <div class='col-md-6 text-center'>
             <a class='btn btn-default disabled' href='#'>
@@ -40,7 +40,7 @@ Template Name: Front Page Template
               <br>
               Alfamart
             </a>
-            <p>Masukkan kode unik hasil pembelian Veja dan kumpulkan poin sebanyak-banyaknya untuk memenangkan hadiah mingguan menarik!</p>
+            <p>Masukkan kode unik hasil pembelian Veja di Alfamart dan kumpulkan poin sebanyak-banyaknya. Poin tertinggi berhak mendapatkan hadiah menarik dari Veja.</p>
           </div>
         </div>
       </div>
