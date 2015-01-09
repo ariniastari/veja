@@ -5790,5 +5790,24 @@ ul.inline {
   .navbar-nav {
     margin-left: 60px !important; } }
 
+@media (min-width: 768px) {
+  .table {
+    margin-top: 40px;
+  }
+}
+.table tr:first-child td {
+  border-top: 0;
+}
+
+.table tr td:first-child, .table tr td:last-child {
+  font-weight: bold;
+  color: #e41c26;
+  text-transform: uppercase;
+}
+
+.table td {
+  border-color: #fe9eaa !important;
+}
+
 /*# sourceMappingURL=styles.css.map */
 
