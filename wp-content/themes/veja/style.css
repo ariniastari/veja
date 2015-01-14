@@ -268,8 +268,8 @@ th {
     border: 1px solid #ddd !important; } }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+  src: url("assets/fonts/bootstrap/glyphicons-halflings-regular.eot");
+  src: url("assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
 .glyphicon {
   position: relative;
   top: 1px;
@@ -5809,5 +5809,43 @@ ul.inline {
   border-color: #fe9eaa !important;
 }
 
+/* enable absolute positioning */
+.inner-addon {
+  position: relative;
+}
+
+/* style glyph */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align glyph */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+.pink {
+  color: #e51c20;
+}
+
+.blue {
+  color: #417ab9;
+  font-weight: bold;
+}
+
+.search-result {
+  margin-top: 15px;
+}
+
+.form-search {
+  padding: 10px;
+  background: #f1f1f1;
+  margin-top: 15px;
+}
 /*# sourceMappingURL=styles.css.map */
 
