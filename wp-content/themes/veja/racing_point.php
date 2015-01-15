@@ -11,9 +11,10 @@ Template Name: Racing Point Page Template
     </div>
     <div class='col-md-5 white'>
       <div class='title'>
-        <h1 style="text-align: left;">Daftarkan Diri Anda</h1>
-        <p> Isi data-data dibawah ini</p>
-        <form role='form'>
+        <?php while ( have_posts() ) : the_post(); ?>
+          <?php the_content(); ?>
+        <?php endwhile; // end of the loop. ?>
+        <!-- <form role='form'>
           <div class='form-group'>
             <input class='form-control' id='name' placeholder='Name' style='margin-top: 10px;' type='text'>
           </div>
@@ -31,15 +32,13 @@ Template Name: Racing Point Page Template
             </div>
           </div>
           <button class='btn btn-danger' style="margin:10px 0;" type='submit'>Kirim</button>
-        </form>
+        </form> -->
       </div>
     </div>
   </div>
 </div>
 <div id="primary" class="site-content">
   <div id="content" role="main">
-
-  <?php the_content(); ?>
 
   </div><!-- #content -->
 </div><!-- #primary -->
