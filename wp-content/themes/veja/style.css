@@ -5407,6 +5407,12 @@ button.close {
     display: none !important; } }
 .sprites {
   background: url("assets/images/sprites.png"); }
+  .sprites.produk-racing {
+    background-position: -1px -718px;
+    width: 200px;
+    height: 302px; 
+    margin-top: 20%;
+    float: right;}
   .sprites.brand {
     background-position: -8px -5px;
     width: 223px;
@@ -5502,9 +5508,21 @@ p {
 
 h1 {
   font-family: "Roboto";
-  font-size: 42px;
+  font-size: 30px;
   text-transform: uppercase;
-  color: #ff3b5e; }
+  color: #ff3b5e;
+  padding-top: 20px;
+   }
+  @media(min-width: 768px) {
+    h1 {
+      font-size: 42px;
+    }
+  }
+  @media(min-width: 992px) {
+    h1 {
+      padding-top: 0;
+    }
+  }
 
 h2 {
   font-family: "Roboto";
