@@ -5748,9 +5748,13 @@ ul.inline {
   font-size: 12px;
   border-radius: 5px; }
   .varian.blue {
-    background: #0158a8; }
+    background: #0158a8; 
+    color: #fff;
+    font-weight: normal;}
   .varian.pink {
-    background: #e70188; }
+    background: #e70188; 
+    color: #fff;
+    font-weight: normal;}
   .varian.green {
     background: #016644; }
 
