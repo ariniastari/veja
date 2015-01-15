@@ -1,1 +1,1 @@
-.tablepress thead th{display:none}.dataTables_filter{float:none}.paginate_button:after,.paginate_button:before{color:#e41c26}.paginate_button:hover:before,.paginate_button:hover:after{color:#e41c26}
+.tablepress thead th{display:none}.tablepress .odd td{background-color:#fff}.dataTables_filter{float:none}.paginate_button:after,.paginate_button:before{color:#e41c26}.paginate_button:hover:before,.paginate_button:hover:after{color:#e41c26}

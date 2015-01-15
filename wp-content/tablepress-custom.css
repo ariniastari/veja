@@ -2,6 +2,10 @@
 	display: none;
 }
 
+.tablepress .odd td {
+	background-color: #fff;
+}
+
 .dataTables_filter {
 	float: none;
 }
