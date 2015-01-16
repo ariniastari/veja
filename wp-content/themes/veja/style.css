@@ -5612,8 +5612,11 @@ h5 {
 .white {
   background: #fff;
   margin-bottom: 40px; 
-  min-height: 500px;}
+  }
 
+.leaderboard .white {
+  min-height: 500px;
+}
 .title {
   margin-bottom: 40px; }
   .title h1, .title h4, .title h5 {
