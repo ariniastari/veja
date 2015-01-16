@@ -5879,7 +5879,7 @@ ul.inline {
   list-style: none; }
  
 .gfield_label {
-  display: none;
+  display: none !important;
 }
 .gform_body {
   margin-top: 20px;
@@ -5893,7 +5893,10 @@ ul.inline {
 .gform_wrapper .gfield_required {
   padding-left: 1px;
   color: #b94a48; }
- 
+
+.gform_wrapper .top_label input.medium, .gform_wrapper .top_label select.medium {
+  width: 100%;
+}
  
 /*# sourceMappingURL=styles.css.map */
 
