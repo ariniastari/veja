@@ -35,7 +35,7 @@ Template Name: Front Page Template
             <p>Ekspresikan kreatifitas Supermama Anda bersama Veja dan raih kesempatan memenangkan hadiah menarik dari Veja.</p>
           </div>
           <div class='col-md-6 text-center'>
-            <a class='btn btn-default disabled' href='#'>
+            <a class='btn btn-default' href='<?php echo esc_url( get_permalink( get_page_by_title( 'Daftarkan Diri Anda' ) ) ); ?>'>
               Racing Point
               <br>
               Alfamart
