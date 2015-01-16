@@ -169,8 +169,8 @@ class GF_Field_Email extends GF_Field {
 				$value    = esc_attr( $value );
 				$class    = esc_attr( $class );
 
-				return "<div class='ginput_container'>
-                            <input name='input_{$id}' id='{$field_id}' type='{$html_input_type}' value='$value' class='{$class}' {$tabindex} {$logic_event} {$disabled_text} {$single_placeholder_attribute}/>
+				return "<div class='form-group'>
+                            <input name='input_{$id}' id='{$field_id}' required type='{$html_input_type}' value='$value' class='{$class} form-control' {$tabindex} {$logic_event} {$disabled_text} {$single_placeholder_attribute}/>
                         </div>";
 			}
 		}

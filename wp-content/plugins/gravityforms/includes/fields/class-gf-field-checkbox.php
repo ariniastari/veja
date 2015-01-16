@@ -43,7 +43,8 @@ class GF_Field_Checkbox extends GF_Field {
 		$field_id      = $is_entry_detail || $is_form_editor || $form_id == 0 ? "input_$id" : 'input_' . $form_id . "_$id";
 		$disabled_text = $is_form_editor ? 'disabled="disabled"' : '';
 
-		return sprintf( "<div class='ginput_container'><ul class='gfield_checkbox' id='%s'>%s</ul></div>", $field_id, $this->get_checkbox_choices( $value, $disabled_text, $form_id ) );
+		return sprintf( "
+			<div class='form-group'>%s</div>", $this->get_checkbox_choices( $value, $disabled_text, $form_id ) );
 	}
 
 	public function get_first_input_id( $form ){
@@ -234,10 +235,12 @@ class GF_Field_Checkbox extends GF_Field {
 					$choice_value .= '|' . $price;
 				}
 				$choice_value = esc_attr( $choice_value );
-				$choices .= "<li class='gchoice_{$id}'>
-								<input name='input_{$input_id}' type='checkbox' $logic_event value='{$choice_value}' {$checked} id='choice_{$id}' {$tabindex} {$disabled_text} />
-								<label for='choice_{$id}' id='label_{$id}'>{$choice['text']}</label>
-							</li>";
+				$choices .= "<div class='checkbox'>
+			              		<label>
+			              			<input required name='input_{$input_id}' type='checkbox' $logic_event value='{$choice_value}' {$checked} id='choice_{$id}' {$tabindex} {$disabled_text} />
+			                		{$choice['text']}
+			              		</label>
+				            </div>";
 
 				$is_entry_detail = $this->is_entry_detail();
 				$is_form_editor  = $this->is_form_editor();

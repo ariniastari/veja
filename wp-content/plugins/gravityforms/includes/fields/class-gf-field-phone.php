@@ -69,7 +69,7 @@ class GF_Field_Phone extends GF_Field {
 
 		$tabindex = $this->get_tabindex();
 
-		return sprintf( "<div class='ginput_container'><input name='input_%d' id='%s' type='{$html_input_type}' value='%s' class='%s' {$tabindex} {$logic_event} {$placeholder_attribute} %s/>{$instruction_div}</div>", $id, $field_id, esc_attr( $value ), esc_attr( $class ), $disabled_text );
+		return sprintf( "<div class='form-group'><input name='input_%d' id='%s' type='{$html_input_type}' required value='%s' class='%s form-control' {$tabindex} {$logic_event} {$placeholder_attribute} %s/>{$instruction_div}</div>", $id, $field_id, esc_attr( $value ), esc_attr( $class ), $disabled_text );
 
 	}
 

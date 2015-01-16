@@ -693,7 +693,7 @@ class GFFormDisplay {
 			}
 
 			if ( $is_postback && ! $is_valid ) {
-				$validation_message = "<div class='validation_error'>" . __( 'There was a problem with your submission.', 'gravityforms' ) . ' ' . __( 'Errors have been highlighted below.', 'gravityforms' ) . '</div>';
+				$validation_message = "<div class='alert alert-danger'>" . __( 'There was a problem with your submission.', 'gravityforms' ) . ' ' . __( 'Errors have been highlighted below.', 'gravityforms' ) . '</div>';
 				$form_string .= apply_filters( "gform_validation_message_{$form['id']}", apply_filters( 'gform_validation_message', $validation_message, $form ), $form );
 			}
 
@@ -917,7 +917,7 @@ class GFFormDisplay {
 			if ( $button['type'] == 'link' ) {
 				$button_input = "<a href='javascript:void(0);' id='{$button_input_id}_link' class='{$class}' alt='{$alt}' title='{$alt}' {$tabindex} {$onclick}>{$button_text}</a>";
 			} else {
-				$class .= ' button';
+				$class .= ' button btn btn-danger';
 				$button_input = "<input type='{$input_type}' id='{$button_input_id}' class='{$class}' value='" . esc_attr( $button_text ) . "' {$tabindex} {$onclick} />";
 			}
 		} else {

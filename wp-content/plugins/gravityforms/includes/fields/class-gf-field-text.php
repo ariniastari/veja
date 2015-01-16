@@ -65,9 +65,9 @@ class GF_Field_Text extends GF_Field {
 		$disabled_text         = $is_form_editor ? 'disabled="disabled"' : '';
 		$placeholder_attribute = $this->get_field_placeholder_attribute();
 
-		$input = "<input name='input_{$id}' id='{$field_id}' type='{$html_input_type}' value='{$value}' class='{$class}' {$max_length} {$tabindex} {$logic_event} {$placeholder_attribute} {$disabled_text}/>";
+		$input = "<input name='input_{$id}' required id='{$field_id}' type='{$html_input_type}' value='{$value}' class='{$class} form-control' {$max_length} {$tabindex} {$logic_event} {$placeholder_attribute} {$disabled_text}/>";
 
-		return sprintf( "<div class='ginput_container'>%s</div>", $input );
+		return sprintf( "<div class='form-group'>%s</div>", $input );
 	}
 
 	public function allow_html(){
