@@ -5432,9 +5432,7 @@ button.close {
     position: absolute;
     margin-top: 85%;
     margin-left: 15%;
-    z-index: 3; }
-    .sprites.produk-1.remove {
-      z-index: 1; }
+    z-index: 1; }
   .sprites.produk-2 {
     background-position: -248px -17px;
     height: 233px;
@@ -5901,6 +5899,29 @@ ul.inline {
 .gform_wrapper .top_label input.medium, .gform_wrapper .top_label select.medium {
   width: 100% !important;
 }
- 
+
+.height {
+    height: 176px;
+  } 
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .height {
+    height: 381px;
+  } 
+ }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .height {
+    height: 333px;
+  } 
+}
+
+@media (min-width: 1200px) { 
+  .height {
+    height: 458px;
+  } 
+}
 /*# sourceMappingURL=styles.css.map */
 

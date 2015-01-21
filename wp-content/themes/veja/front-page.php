@@ -23,7 +23,8 @@ Template Name: Front Page Template
       </div>
       <div class='col-md-8'>
         <div class='relative height'>
-          <img class='youtube' data-video='http://www.youtube.com/embed/FVjNHQ64SQk?autoplay=1' src='<?php echo $image[0] ?>'>
+          <iframe class="youtube" width="100%" height="100%" src="//www.youtube.com/embed/FVjNHQ64SQk?autoplay=1" frameborder="0" allowfullscreen></iframe>
+          <!-- <img class='youtube' data-video='http://www.youtube.com/embed/FVjNHQ64SQk?autoplay=1' src='<?php echo $image[0] ?>'> -->
         </div>
         <div class='row campaign'>
           <div class='col-md-6 text-center'>
