@@ -10,7 +10,9 @@ Template Name: Racing Point Page Template
       <div class="sprites produk-racing"></div>
     </div>
     <div class='col-md-5 white'>
-      <div class='title'>
+        <?php if(is_page( 'CHECK SMS POIN' )) { ?>
+          <?php the_title( '<h1>', '</h1>' ); ?>
+        <?php } ?>
         <?php while ( have_posts() ) : the_post(); ?>
           <?php the_content(); ?>
         <?php endwhile; // end of the loop. ?>
@@ -33,7 +35,6 @@ Template Name: Racing Point Page Template
           </div>
           <button class='btn btn-danger' style="margin:10px 0;" type='submit'>Kirim</button>
         </form> -->
-      </div>
     </div>
   </div>
 </div>
