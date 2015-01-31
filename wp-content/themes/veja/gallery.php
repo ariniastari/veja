@@ -148,4 +148,5 @@ Template Name: Gallery Template
         </div>
       </div>
     </div>
+  </div>
 <?php get_footer(); ?>
