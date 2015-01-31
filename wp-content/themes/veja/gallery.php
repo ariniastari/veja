@@ -6,7 +6,7 @@ Template Name: Gallery Template
 
 <?php get_header(); ?>
 <?php //echo do_shortcode('[ngg_images gallery_ids="1" display_type="photocrati-nextgen_basic_thumbnails"]');?>
-    <div class='container-fluid content'>
+    <div class='container-fluid content gallery'>
       <div class='row'>
         <div class='col-md-8 col-md-offset-2 white'>
           <div class='row title' style="margin-bottom: 0;">

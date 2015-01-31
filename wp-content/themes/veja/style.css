@@ -5612,7 +5612,7 @@ h5 {
   margin-bottom: 40px; 
   }
 
-.leaderboard .white {
+.leaderboard .white, .gallery .white {
   min-height: 500px;
 }
 .title {
