@@ -8,12 +8,12 @@
             <ul>
               <li>
                 <a href='#'>
-                  <div class='sprites twitter'></div>
+                  <!-- <div class='sprites twitter'></div> -->
                 </a>
               </li>
               <li>
                 <a href='#'>
-                  <div class='sprites facebook'></div>
+                  <!-- <div class='sprites facebook'></div> -->
                 </a>
               </li>
             </ul>
