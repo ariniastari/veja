@@ -46,7 +46,7 @@ Template Name: Racing Point Page Template
 <div aria-hidden='true' aria-labelledby='myModalLabel' class='modal fade' id='tnc' role='dialog' tabindex='-1'>
   <div class='modal-dialog'>
     <div class='modal-content'>
-      <div class='modal-body'>
+      <div class='modal-body' style= "padding:15px;">
         <h1>Terms &amp; Conditions</h1>
         <h3>Syarat:</h3>
         <ol>
