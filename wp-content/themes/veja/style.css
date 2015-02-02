@@ -5927,5 +5927,9 @@ ul.inline {
     height: 458px;
   } 
 }
+
+.td.column-2 {
+  word-break: break-all;
+}
 /*# sourceMappingURL=styles.css.map */
 
