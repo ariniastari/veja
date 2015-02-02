@@ -148,5 +148,6 @@ Template Name: Gallery Template
         </div>
       </div>
     </div>
-  </div>
+  <!-- DELETE THIS KALAU UDAH PAKE GALLERY -->
+  </div> 
 <?php get_footer(); ?>
