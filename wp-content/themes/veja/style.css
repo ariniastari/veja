@@ -3676,6 +3676,7 @@ tbody.collapse.in {
   .navbar-default .navbar-text {
     color: #ff3b5e; }
   .navbar-default .navbar-nav > li > a {
+    text-decoration: none;
     color: #ff3b5e; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
       color: #33c5ff;
