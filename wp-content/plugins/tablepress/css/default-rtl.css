@@ -103,7 +103,7 @@
 /* Filter/Search */
 .dataTables_filter {
 	float: right;
-	white-space: nowrap;
+	/*white-space: nowrap;*/
 }
 
 /* Table information */
