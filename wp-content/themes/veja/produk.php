@@ -25,7 +25,7 @@ Template Name: Produk Template
             </div>
             <div class='col-sm-6 col-sm-offset-1'>
               <div class='sprites tagline'></div>
-              <h1>Veja Serbaguna</h1>
+              <h1><img style="width:auto; margin-top:-10px;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo-veja.png"/> SERBAGUNA </h1>
               <p>Kemasan</p>
               <ul class='inline'>
                 <li>
