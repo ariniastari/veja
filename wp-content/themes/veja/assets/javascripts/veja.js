@@ -1,4 +1,5 @@
 jQuery( window ).load(function() {
+    jQuery('#winner').modal('show');
     jQuery('.youtube').click(function(){
         video = '<iframe width="100%" height="100%" allowfullscreen src="'+ jQuery(this).attr('data-video') +'"></iframe>';
         jQuery(this).replaceWith(video);

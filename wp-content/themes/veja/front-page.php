@@ -50,4 +50,16 @@ Template Name: Front Page Template
       </div>
     </div>
   </div>
+  <div aria-hidden='true' aria-labelledby='myModalLabel' class='modal fade' id='winner' role='dialog' tabindex='-1'>
+    <div class='modal-dialog'>
+      <div class='modal-content'>
+        <div class='modal-body text-center'>
+          <h1>Testimoni Campaign</h4>
+          <p>Selamat <strong>Reyfitra</strong>, kamu menjadi pemenang Testimoni Campaign.</p>
+          <p>Untuk Pemenang Racing Point Alfamart, Tim kami akan langsung menghubungi pemenang setelah melakukan validasi dengan pihak Alfamart.</p>
+          <br/>
+        </div>
+      </div>
+    </div>
+  </div>
 <?php get_footer(); ?>
